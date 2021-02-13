@@ -1,0 +1,64 @@
+body {
+	font: 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+	background: linear-gradient(to right, red , yellow); /* Standard syntax */
+}
+
+h1 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+    
+}
+
+h3 {
+	font: 900 1em 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+}
+
+.txt {
+    background: linear-gradient(to right, rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow:  0.1rem 0.1rem rgba(0,0,0, 0.1);
+
+}
+
+.container {
+    width: 100px;
+    height: 100px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+
+
+
+}
+
+input.first {
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+input.second {
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+button {
+    grid-column: 1/-1;
+    grid-row: 2/2;
+    font-size: 20px;
+    border: solid white 0.1rem ;
+    border-radius: 0.5rem;
+}
+
